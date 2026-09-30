@@ -1,0 +1,547 @@
+/* ============================================================
+   ALOOZ AR - STUDIO UI
+   Interface minimalista para o configurador de produtos
+   ============================================================ */
+
+
+/* ============================================================
+   ROOT
+   ============================================================ */
+
+.studio-root {
+    flex-grow: 1;
+
+    justify-content: space-between;
+
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+}
+
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+
+.top-bar {
+    width: 100%;
+    height: 52px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 16px;
+    padding-right: 7px;
+
+    background-color: rgba(11, 31, 51, 0.92);
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.app-title {
+    color: rgb(255, 255, 255);
+
+    font-size: 18px;
+
+    -unity-font-style: bold;
+}
+
+
+/* ============================================================
+   RESET BUTTON
+   ============================================================ */
+
+.icon-button {
+    width: 38px;
+    min-width: 38px;
+    max-width: 38px;
+
+    height: 38px;
+    min-height: 38px;
+    max-height: 38px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    color: rgb(255, 255, 255);
+
+    font-size: 19px;
+
+    -unity-text-align: middle-center;
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+
+.icon-button:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+
+/* ============================================================
+   BOTTOM SHEET
+   ============================================================ */
+
+.bottom-sheet {
+    width: 100%;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    background-color: rgba(11, 31, 51, 0.96);
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   BOTTOM SHEET HEADER
+   ============================================================ */
+
+.sheet-header {
+    width: 100%;
+    height: 52px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 16px;
+    padding-right: 7px;
+
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+
+.product-title {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+
+    color: rgb(255, 255, 255);
+
+    font-size: 16px;
+
+    -unity-font-style: bold;
+}
+
+
+/* ============================================================
+   OPEN / CLOSE BUTTON
+   ============================================================ */
+
+.sheet-toggle-button {
+    width: 38px;
+    min-width: 38px;
+    max-width: 38px;
+
+    height: 38px;
+    min-height: 38px;
+    max-height: 38px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-left: 8px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    color: rgb(255, 181, 102);
+
+    font-size: 17px;
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+
+.sheet-toggle-button:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* ============================================================
+   EXPANDABLE CONTENT
+   ============================================================ */
+
+.sheet-content {
+    width: 100%;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+}
+
+
+/* Quando recolhido, o conteúdo desaparece completamente. */
+
+.collapsed {
+    display: none;
+}
+
+
+/* ============================================================
+   SECTION LABELS
+   ============================================================ */
+
+.section-label {
+    color: rgb(220, 229, 237);
+
+    font-size: 12px;
+
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+/* ============================================================
+   COLOR ROW
+   ============================================================ */
+
+.color-row {
+    width: 100%;
+
+    flex-direction: row;
+    align-items: center;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-bottom: 4px;
+}
+
+
+/* ============================================================
+   COLOR BUTTONS
+   ============================================================ */
+
+.color-button {
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+
+    height: 34px;
+    min-height: 34px;
+    max-height: 34px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-right: 10px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+
+    border-top-color: rgba(255, 255, 255, 0.28);
+    border-right-color: rgba(255, 255, 255, 0.28);
+    border-bottom-color: rgba(255, 255, 255, 0.28);
+    border-left-color: rgba(255, 255, 255, 0.28);
+
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+
+.color-button:hover {
+    border-top-color: rgb(255, 181, 102);
+    border-right-color: rgb(255, 181, 102);
+    border-bottom-color: rgb(255, 181, 102);
+    border-left-color: rgb(255, 181, 102);
+}
+
+
+/* ============================================================
+   COLOR OPTIONS
+   ============================================================ */
+
+.color-white {
+    background-color: rgb(245, 245, 245);
+}
+
+
+.color-black {
+    background-color: rgb(20, 20, 20);
+}
+
+
+.color-gray {
+    background-color: rgb(120, 120, 120);
+}
+
+
+.color-red {
+    background-color: rgb(200, 45, 45);
+}
+
+
+.color-blue {
+    background-color: rgb(35, 85, 160);
+}
+
+
+.color-orange {
+    background-color: rgb(255, 181, 102);
+}
+
+
+/* ============================================================
+   GENERIC CONTROL ROW
+   ============================================================ */
+
+.control-row {
+    width: 100%;
+
+    min-width: 0;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 12px;
+}
+
+
+.control-label {
+    width: 82px;
+    min-width: 82px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    color: rgb(220, 229, 237);
+
+    font-size: 12px;
+}
+
+
+/* ============================================================
+   LIGHT BUTTON
+   ============================================================ */
+
+.light-button {
+    width: 82px;
+    min-width: 82px;
+    max-width: 82px;
+
+    height: 38px;
+    min-height: 38px;
+    max-height: 38px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    color: rgb(255, 255, 255);
+
+    font-size: 11px;
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+
+    border-top-color: rgba(255, 255, 255, 0.16);
+    border-right-color: rgba(255, 255, 255, 0.16);
+    border-bottom-color: rgba(255, 255, 255, 0.16);
+    border-left-color: rgba(255, 255, 255, 0.16);
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+/*
+   Esta classe é adicionada pelo StudioUIController
+   quando a iluminação frontal está ligada.
+*/
+
+.light-button-on {
+    background-color: rgb(255, 181, 102);
+
+    color: rgb(11, 31, 51);
+
+    border-top-color: rgb(255, 181, 102);
+    border-right-color: rgb(255, 181, 102);
+    border-bottom-color: rgb(255, 181, 102);
+    border-left-color: rgb(255, 181, 102);
+}
+
+
+/* ============================================================
+   INTENSITY SLIDER
+   ============================================================ */
+
+.intensity-slider {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+
+    margin-left: 10px;
+
+    color: rgb(255, 181, 102);
+}
+
+
+/* Linha de fundo do slider */
+
+.intensity-slider .unity-base-slider__tracker {
+    height: 4px;
+
+    background-color: rgba(255, 255, 255, 0.18);
+
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+/* Handle do slider */
+
+.intensity-slider .unity-base-slider__dragger {
+    width: 18px;
+    height: 18px;
+
+    background-color: rgb(255, 181, 102);
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+
+/* ============================================================
+   AR BUTTON
+   ============================================================ */
+
+.primary-button {
+    width: 100%;
+
+    height: 42px;
+    min-height: 42px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-top: 14px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-color: rgb(255, 181, 102);
+
+    color: rgb(11, 31, 51);
+
+    font-size: 13px;
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.primary-button:hover {
+    background-color: rgb(255, 194, 128);
+}
+
+
+/* ============================================================
+   UI BLOCKING MARKER
+
+   Não precisa de propriedades visuais.
+   Essa classe será usada pelo StudioProductController
+   para identificar áreas onde gestos 3D devem ser bloqueados.
+   ============================================================ */
+
+.blocks-studio {
+}

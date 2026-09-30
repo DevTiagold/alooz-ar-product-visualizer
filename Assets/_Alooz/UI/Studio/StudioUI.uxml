@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Alooz/UI/Studio/StudioUI.uss?fileID=7433441132597879392&amp;guid=416974fd0ccba214caf202a0fc93edde&amp;type=3#StudioUI"/>
+    <ui:VisualElement name="root" class="studio-root">
+        <ui:VisualElement name="top-bar" class="top-bar blocks-studio">
+            <ui:Label name="app-title" text="ALOOZ" class="app-title"/>
+            <ui:Button name="reset-button" text="↺" class="icon-button"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom-sheet" class="bottom-sheet blocks-studio">
+            <ui:VisualElement name="sheet-header" class="sheet-header">
+                <ui:Label name="product-title" text="M Frontlight" class="product-title"/>
+                <ui:Button name="sheet-toggle" text="⌃" class="sheet-toggle-button"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="sheet-content" class="sheet-content collapsed">
+                <ui:Label text="Frente" class="section-label"/>
+                <ui:VisualElement class="color-row">
+                    <ui:Button name="face-white" class="color-button color-white"/>
+                    <ui:Button name="face-red" class="color-button color-red"/>
+                    <ui:Button name="face-blue" class="color-button color-blue"/>
+                    <ui:Button name="face-orange" class="color-button color-orange"/>
+                </ui:VisualElement>
+                <ui:Label text="Laterais" class="section-label"/>
+                <ui:VisualElement class="color-row">
+                    <ui:Button name="body-black" class="color-button color-black"/>
+                    <ui:Button name="body-white" class="color-button color-white"/>
+                    <ui:Button name="body-gray" class="color-button color-gray"/>
+                    <ui:Button name="body-blue" class="color-button color-blue"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="control-row">
+                    <ui:Label text="Luz frontal" class="control-label"/>
+                    <ui:Button name="light-button" text="LIGAR" class="light-button"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="control-row">
+                    <ui:Label text="Intensidade" class="control-label"/>
+                    <ui:Slider name="intensity-slider" low-value="0" high-value="10" value="5" class="intensity-slider"/>
+                </ui:VisualElement>
+                <ui:Button name="ar-button" text="Visualizar em AR" class="primary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

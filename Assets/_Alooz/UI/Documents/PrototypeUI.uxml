@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Alooz/UI/Styles/PrototypeUI.uss?fileID=7433441132597879392&amp;guid=447ed998960b5df4896f618dfb8e4b3c&amp;type=3#PrototypeUI"/>
+    <ui:VisualElement name="root" class="app-root">
+        <ui:VisualElement name="top-bar" class="top-bar blocks-ar">
+            <ui:VisualElement class="brand-container">
+                <ui:VisualElement class="brand-mark"/>
+                <ui:Label name="app-title" text="ALOOZ AR" class="app-title"/>
+            </ui:VisualElement>
+            <ui:Button name="menu-button" text="•••" class="icon-button"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="reticle-layer" class="reticle-layer">
+            <ui:Label name="reticle-status" text="Procurando superfície..." class="reticle-status"/>
+            <ui:VisualElement name="reticle-ring" class="reticle-ring reticle-searching">
+                <ui:VisualElement class="reticle-dot"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom-sheet" class="bottom-sheet blocks-ar">
+            <ui:VisualElement name="product-header" class="product-header">
+                <ui:Label name="product-title" text="Produto Demo" class="product-title"/>
+                <ui:Label name="product-subtitle" text="Posicione e ajuste o objeto" class="product-subtitle"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="scale-row" class="control-row">
+                <ui:Label text="Escala" class="control-label"/>
+                <ui:VisualElement class="control-content">
+                    <ui:Slider name="scale-slider" low-value="0.2" high-value="2" value="1" class="compact-slider"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="rotation-row" class="control-row">
+                <ui:Label text="Rotação" class="control-label"/>
+                <ui:VisualElement class="rotation-controls">
+                    <ui:Button name="rotate-left-button" text="−" class="small-round-button"/>
+                    <ui:Label name="rotation-value" text="0°" class="compact-value"/>
+                    <ui:Button name="rotate-right-button" text="+" class="small-round-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="lock-button" text="Fixar objeto" class="primary-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

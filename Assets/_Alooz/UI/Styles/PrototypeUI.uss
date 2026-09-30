@@ -1,0 +1,405 @@
+/* ========================================
+   ROOT
+======================================== */
+
+.app-root {
+    flex-grow: 1;
+
+    justify-content: space-between;
+
+    padding-top: 16px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+/* ========================================
+   TOP BAR
+======================================== */
+
+.top-bar {
+    width: 100%;
+    height: 46px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 12px;
+    padding-right: 5px;
+
+    background-color: rgba(11, 31, 51, 0.94);
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.brand-container {
+    flex-direction: row;
+
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+.brand-mark {
+    width: 7px;
+    height: 24px;
+
+    margin-right: 9px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    background-color: rgb(255, 181, 102);
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+.app-title {
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    color: rgb(255, 255, 255);
+
+    font-size: 16px;
+
+    -unity-font-style: bold;
+}
+
+
+.icon-button {
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+
+    height: 34px;
+    min-height: 34px;
+    max-height: 34px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    color: rgb(255, 255, 255);
+
+    font-size: 14px;
+
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+
+/* ========================================
+   RETÍCULA
+======================================== */
+
+.reticle-layer {
+    position: absolute;
+
+    width: 180px;
+    height: 90px;
+
+    left: 50%;
+    top: 50%;
+
+    margin-left: -90px;
+    margin-top: -45px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* pequena indicação acima da retícula */
+
+.reticle-status {
+    color: rgb(255, 255, 255);
+
+    background-color: rgba(11, 31, 51, 0.78);
+
+    font-size: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin-bottom: 7px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    -unity-text-align: middle-center;
+}
+
+
+/* círculo */
+
+.reticle-ring {
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+
+
+/* procurando */
+
+.reticle-searching {
+    border-top-color: rgba(255, 255, 255, 0.50);
+    border-right-color: rgba(255, 255, 255, 0.50);
+    border-bottom-color: rgba(255, 255, 255, 0.50);
+    border-left-color: rgba(255, 255, 255, 0.50);
+}
+
+
+/* superfície encontrada */
+
+.reticle-valid {
+    border-top-color: rgb(255, 181, 102);
+    border-right-color: rgb(255, 181, 102);
+    border-bottom-color: rgb(255, 181, 102);
+    border-left-color: rgb(255, 181, 102);
+}
+
+
+.reticle-dot {
+    width: 7px;
+    height: 7px;
+
+    background-color: rgb(255, 181, 102);
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* ========================================
+   BOTTOM SHEET
+======================================== */
+
+.bottom-sheet {
+    width: 100%;
+
+    flex-shrink: 0;
+
+    padding-top: 11px;
+    padding-right: 12px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+
+    background-color: rgba(11, 31, 51, 0.94);
+
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+
+/* ========================================
+   PRODUCT
+======================================== */
+
+.product-header {
+    width: 100%;
+
+    flex-direction: column;
+
+    margin-bottom: 5px;
+}
+
+
+.product-title {
+    width: 100%;
+
+    color: rgb(255, 255, 255);
+
+    font-size: 15px;
+
+    -unity-font-style: bold;
+
+    margin-bottom: 1px;
+}
+
+
+.product-subtitle {
+    width: 100%;
+
+    color: rgb(220, 229, 237);
+
+    font-size: 10px;
+}
+
+
+/* ========================================
+   CONTROL ROW
+======================================== */
+
+.control-row {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 38px;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    margin-top: 3px;
+}
+
+
+.control-label {
+    width: 58px;
+    min-width: 58px;
+    max-width: 58px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    color: rgb(220, 229, 237);
+
+    font-size: 11px;
+}
+
+
+.control-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+
+    justify-content: center;
+}
+
+
+.compact-slider {
+    width: 100%;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+}
+
+
+/* ========================================
+   ROTATION
+======================================== */
+
+.rotation-controls {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.small-round-button {
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+
+    height: 32px;
+    min-height: 32px;
+    max-height: 32px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: rgba(255, 255, 255, 0.12);
+
+    color: rgb(255, 255, 255);
+
+    font-size: 15px;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.compact-value {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 32px;
+
+    color: rgb(255, 255, 255);
+
+    font-size: 12px;
+
+    -unity-text-align: middle-center;
+}
+
+
+/* ========================================
+   PRIMARY BUTTON
+======================================== */
+
+.primary-button {
+    width: 100%;
+
+    height: 38px;
+    min-height: 38px;
+
+    margin-top: 6px;
+
+    flex-shrink: 0;
+
+    background-color: rgb(255, 181, 102);
+
+    color: rgb(11, 31, 51);
+
+    font-size: 12px;
+
+    -unity-font-style: bold;
+
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
