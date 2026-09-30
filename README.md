@@ -25,6 +25,40 @@ The current prototype uses an illuminated channel letter — **M Frontlight** �
 
 ---
 
+## Project Location
+
+This repository contains the complete Unity project, including Unity-generated project configuration and package dependencies.
+
+The main source files and assets developed specifically for **Alooz AR Product Visualizer** are organized under:
+
+```text
+Assets/
+└── _Alooz/
+```
+
+If you are exploring the repository, this is the main directory to start with.
+
+```text
+Assets/_Alooz/
+├── Materials/
+├── Models/
+├── Prefabs/
+├── Scenes/
+├── Scripts/
+└── UI/
+```
+
+### Main Development Areas
+
+- **`Assets/_Alooz/Scenes/`** — Studio and Augmented Reality scenes
+- **`Assets/_Alooz/Scripts/`** — C# application logic
+- **`Assets/_Alooz/Models/`** — 3D product assets
+- **`Assets/_Alooz/Materials/`** — product and visualization materials
+- **`Assets/_Alooz/Prefabs/`** — reusable product prefabs
+- **`Assets/_Alooz/UI/`** — UI Toolkit interfaces and styles
+
+> **Start here:** `Assets/_Alooz/`
+
 ## Current Prototype
 
 ### M Frontlight
